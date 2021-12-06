@@ -1,5 +1,7 @@
 # DMM_EnglishLesson
 
+Detect reservation completion emails from DMM English lesson and register them in Google Calendar.
+
 ## Requirements
 
 - Install clasp
@@ -13,6 +15,11 @@ clasp create
 
 ## Deploy
 
+- push
+
 ```shell
 clasp push
 ```
+
+- visit [your project](https://script.google.com/home) and set trigger
+![trigger](./images/trigger.jpg)
