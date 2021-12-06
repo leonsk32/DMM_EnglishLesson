@@ -9,8 +9,7 @@ Detect reservation completion emails from DMM English lesson and register them i
 ```shell
 npm i @google/clasp
 clasp login
-clasp create
-# select standalone
+clasp create --type standalone
 ```
 
 ## Deploy

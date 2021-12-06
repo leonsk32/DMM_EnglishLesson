@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "lint": "eslint '**/*.{js,ts}' --quiet --fix"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "7.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.2"
+  }
+}
