@@ -31,7 +31,7 @@ function extractTextsFromMessage(message: GmailMessage) {
   // XXX様、2021/12/06 22:00のAmandaとのレッスン予約が完了しました。
   const startPhrase = /様、.*の/.exec(body)?.[0].toString() ?? ""
   const startText = startPhrase.match(/\d{4}\/\d{2}\/\d{2} \d{2}:\d{2}/g)?.[0].toString() ?? ""
-  const teacherPhrase = /の\w*とのレッスン/.exec(body)?.[0].toString() ?? ""
+  const teacherPhrase = /の[\w ]*とのレッスン/.exec(body)?.[0].toString() ?? ""
   const teacher = teacherPhrase.substring(1, teacherPhrase.length - 6)
 
   return {linkToLesson, startText, teacher}
